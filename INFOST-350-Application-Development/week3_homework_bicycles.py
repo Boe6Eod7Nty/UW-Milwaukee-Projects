@@ -10,6 +10,7 @@ print(bicycles[-1])
 message = "My first bicycle was a " + bicycles[0].title() + "."
 print(message)
 
+# [] is always used for lists, {} is used for dictionaries
 
 motorcycles = ['honda', 'yamaha', 'suzuki']
 print(motorcycles)
@@ -85,7 +86,7 @@ print("\nVideo tutorial code below:\n")
 
 primes = [2, 3, 5, 7, 11, 13]
 
-primes.append(17)
+primes.append(17) # adds a value to the end of a list
 primes.append(19)
 
 print(primes)
@@ -95,10 +96,11 @@ print(primes[2])
 print(primes[-2])
 print(primes[2:5]) #beginning value is included, ending value is not
 
-numbers = [1, 2, 3]
+numbers = [1, 2, 3]         #create a list of any data type
 letters = ['a', 'b', 'c']
 
-print(numbers + letters)
+print(numbers + letters) # concatenate both lists
 print(letters + numbers)
 
+print("\n")
 print(dir(primes)) # dir() lists the attributes and methods of an object
