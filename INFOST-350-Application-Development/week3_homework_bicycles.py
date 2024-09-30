@@ -79,3 +79,26 @@ print(cars)
 
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 print("Size of cars list:", len(cars))
+
+# added code from python list tutorial YT video
+print("\nVideo tutorial code below:\n")
+
+primes = [2, 3, 5, 7, 11, 13]
+
+primes.append(17)
+primes.append(19)
+
+print(primes)
+
+print(primes[0])
+print(primes[2])
+print(primes[-2])
+print(primes[2:5]) #beginning value is included, ending value is not
+
+numbers = [1, 2, 3]
+letters = ['a', 'b', 'c']
+
+print(numbers + letters)
+print(letters + numbers)
+
+print(dir(primes)) # dir() lists the attributes and methods of an object
