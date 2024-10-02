@@ -19,12 +19,12 @@ ListBEnd = ListB.pop(-1)
 #    then concatenate list ending grammer and the ending sentence.
 ListAString = ", ".join(ListA) # joins all list elements into a string seperated by commas (", ")
 ListAString = ListAString + ", & " + ListAEnd # adds ending list element w/ corrected grammer
-ListAString = ListAString + " are my top 3 career jobs I'd like." # adds ending sentence.
+ListAString = ListAString + " are my top " + str(len(ListA)+1) + " career jobs I'd like." # adds ending sentence.
 print(ListAString)  # print result string
 
 ListBString = ", ".join(ListB)
 ListBString = ListBString + ", & " + ListBEnd
-ListBString = ListBString + " are my top 5 internship locations I'd like."
+ListBString = ListBString + " are my top " + str(len(ListB)+1) + " internship locations I'd like."
 ListBString = ListBString + "\n" # \n to add line break before Extended Excercise below
 print(ListBString)
 
