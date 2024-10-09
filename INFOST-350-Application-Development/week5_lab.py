@@ -16,20 +16,20 @@
 
 
 # Create all list with data
-ListA = ["New York City","Tokyo","London","Los Angeles","Hong Kong"]
-ListB = ["Milwaukee","New York City","Los Angeles","Grand Rapids","Las Vegas"]
+ListA = ["Sydney","Tokyo","London","Moscow","Hong Kong"]
+ListB = ["New York City","Milwaukee","Los Angeles","Grand Rapids","Las Vegas"]
 ListC = ["Enchaladas","Eggs and waffles","Shwarma","Burgers","Chicago Deep Dish Pizza"]
-ListD = ["English","Japanese","Swedish","Korean","Esperanto"]
-ListE = ["December, 1963 (Oh, What a Night!)","Margaritaville","The Rubberband Man","Brandy (You\'re a Fine Girl)","Once in a Lifetime"]
-ListF = ["La Masa","Shaker\'s","Ian\'s Pizza","AJ Bombers","Taco Bell"]
+ListD = ["English","Japanese","Swedish","Dutch","Esperanto"]
+ListE = ["December, 1963 (Oh, What a Night!)","Margaritaville","The Rubberband Man","Brandy (You're a Fine Girl)","Once in a Lifetime"]
+ListF = ["La Masa","Shaker's","Ian's Pizza","AJ Bombers","Taco Bell"]
 ListG = ["Liam","Caleb","Austin","Garrett","John"]
-ListH = ["\'What's up?\'","\'Hey!\'","\'How\'ve you been?\'","\'Howdy\'","\'Hello\'"]
-            # backslash is used to clarify it is not string syntax.
+ListH = ["'What's up?'","'Hey!'","'How've you been?'","'Howdy'","'Hello'"]
+            # backslash is used to distinguish non-syntax string character.
 
 # loop 5 times, once for each entry in the lists
 for i in range(0,5):
     # i is set as 0-4, each of the 5 indexex needed to print.
-    sentance = ( # parenthesis allow for multi-line string concatenation
+    sentence = ( # parenthesis allow for multi-line string concatenation
                 "In "
                 + ListA[i] # world city
                 + " and "
@@ -48,4 +48,41 @@ for i in range(0,5):
                 + ListH[i] # greeting
                 + " to people walking by.\n"
                 )
-    print(sentance) # print each sentance as after it is 'assembled'
+    print(sentence) # print each sentance as after it is 'assembled'
+
+
+# course advisor for freshmen
+# 8 total
+
+list_tips = [
+    "Attend Orientation",
+    "Keep Organized",
+    "Connect with your Instructors",
+    "Ask for Help",
+    "Keep Healthy",
+    "Engage with your Interests",
+    "Maintain Finances",
+    "Embrace Mistakes"
+]
+list_tips_descriptions = [
+    "This will help you familiarize yourself with campus, and you may find clubs or organizations with your interests!",
+    "Once classes are in full swing, proper organization will help a lot!",
+    "Your instructors want you to succeed! Always ask if you have questions of any kind.",
+    "n/a",
+    "n/a",
+    "n/a",
+    "n/a",
+    "n/a"
+]
+
+print("There are many things you can do to help yourself succeed in your freshmen year of college. "
+    + "Here are some great tips to keep in mind as you go through your first fall classes:")
+
+for i in range(len(list_tips)):
+    sentence = "  - " + list_tips[i]
+    print(sentence)
+    detail = "    - " + list_tips_descriptions[i]
+    print(detail)
+
+print("\nEnjoy your time!")
+
